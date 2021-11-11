@@ -33,6 +33,7 @@ const links = {
     "SPRING" : 'https://www.udemy.com/course/spring-boot-expert',
     "FSA10" : 'https://www.udemy.com/course/angular-10-spring-boot-com-deploy-no-heroku-e-github-pages',
     "REACT" : 'https://www.udemy.com/course/domine-react-com-redux-2020-bootstrap-material-ui-e-apis-rest',
+    "QUARKUS" : 'https://www.udemy.com/course/aprenda-quarkus-e-desenvolva-apis-restful-poderosas-em-java',
 }
 
 function redirectFSNEXT(){
@@ -61,4 +62,8 @@ function redirectFSA10(){
 
 function redirectREACT(){
     return redirectComCupom(links.REACT)
+}
+
+function redirectQUARKUS(){
+    return redirectComCupom(links.QUARKUS)
 }
