@@ -34,6 +34,9 @@ const links = {
     "FSA10" : 'https://www.udemy.com/course/angular-10-spring-boot-com-deploy-no-heroku-e-github-pages',
     "REACT" : 'https://www.udemy.com/course/domine-react-com-redux-2020-bootstrap-material-ui-e-apis-rest',
     "QUARKUS" : 'https://www.udemy.com/course/aprenda-quarkus-e-desenvolva-apis-restful-poderosas-em-java',
+    "REACTFS2024": 'https://www.udemy.com/course/fullstack-spring-boot-reactjs-do-zero-ao-deploy-no-docker',
+    "JAVA": 'https://www.udemy.com/course/curso-java-completo-e-atualizado-do-iniciante-ao-avancado',
+    "DOCKER": 'https://www.udemy.com/course/construa-ambientes-de-desenvolvimento-com-docker'
 }
 
 function redirectFSNEXT(){
@@ -66,4 +69,16 @@ function redirectREACT(){
 
 function redirectQUARKUS(){
     return redirectComCupom(links.QUARKUS)
+}
+
+function redirectFSREACT2024(){
+    return redirectComCupom(links.REACTFS2024)
+}
+
+function redirectJAVA(){
+    return redirectComCupom(links.JAVA)
+}
+
+function redirectDOCKER(){
+    return redirectComCupom(links.DOCKER)
 }
