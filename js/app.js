@@ -36,7 +36,8 @@ const links = {
     "QUARKUS" : 'https://www.udemy.com/course/aprenda-quarkus-e-desenvolva-apis-restful-poderosas-em-java',
     "REACTFS2024": 'https://www.udemy.com/course/fullstack-spring-boot-reactjs-do-zero-ao-deploy-no-docker',
     "JAVA": 'https://www.udemy.com/course/curso-java-completo-e-atualizado-do-iniciante-ao-avancado',
-    "DOCKER": 'https://www.udemy.com/course/construa-ambientes-de-desenvolvimento-com-docker'
+    "DOCKER": 'https://www.udemy.com/course/construa-ambientes-de-desenvolvimento-com-docker',
+    "SPRINGMS": 'https://www.udemy.com/course/domine-microservicos-e-mensageria-com-spring-cloud-e-docker'
 }
 
 function redirectFSNEXT(){
@@ -81,4 +82,8 @@ function redirectJAVA(){
 
 function redirectDOCKER(){
     return redirectComCupom(links.DOCKER)
+}
+
+function redirectSPRINGMS(){
+    return redirectComCupom(links.SPRINGMS)
 }
