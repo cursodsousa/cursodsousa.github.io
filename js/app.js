@@ -37,7 +37,8 @@ const links = {
     "REACTFS2024": 'https://www.udemy.com/course/fullstack-spring-boot-reactjs-do-zero-ao-deploy-no-docker',
     "JAVA": 'https://www.udemy.com/course/curso-java-completo-e-atualizado-do-iniciante-ao-avancado',
     "DOCKER": 'https://www.udemy.com/course/construa-ambientes-de-desenvolvimento-com-docker',
-    "SPRINGMS": 'https://www.udemy.com/course/domine-microservicos-e-mensageria-com-spring-cloud-e-docker'
+    "SPRINGMS": 'https://www.udemy.com/course/domine-microservicos-e-mensageria-com-spring-cloud-e-docker',
+    "ANGULAR": ''
 }
 
 function redirectFSNEXT(){
@@ -58,6 +59,10 @@ function redirectDESIGN(){
 
 function redirectSPRING(){
     return redirectComCupom(links.SPRING)
+}
+
+function redirectANGULAR(){
+    return redirectComCupom(links.ANGULAR)
 }
 
 function redirectFSA10(){
