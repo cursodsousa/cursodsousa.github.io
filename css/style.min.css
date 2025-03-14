@@ -1,0 +1,14 @@
+body {
+    background: #000000;
+}
+
+.card {
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+header{
+    background: purple;
+}
