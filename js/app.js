@@ -38,7 +38,7 @@ const links = {
     "JAVA": 'https://www.udemy.com/course/curso-java-completo-e-atualizado-do-iniciante-ao-avancado',
     "DOCKER": 'https://www.udemy.com/course/construa-ambientes-de-desenvolvimento-com-docker',
     "SPRINGMS": 'https://www.udemy.com/course/domine-microservicos-e-mensageria-com-spring-cloud-e-docker',
-    "ANGULAR": ''
+    "ANGULAR": 'https://www.udemy.com/course/angular-curso-completo-do-iniciante-ao-avancado'
 }
 
 function redirectFSNEXT(){
