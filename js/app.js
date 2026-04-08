@@ -15,9 +15,17 @@ const MESES = [
 
 const PREFIXO = "DESCONTO"
 const hoje = new Date();
-const mes = hoje.getMonth()
 
 const CUPOMDOMES = PREFIXO + MESES[hoje.getMonth()] + hoje.getFullYear();
+
+function setCupomNoDom(){
+    const cupomEl = document.getElementById('cupom-do-mes');
+    if (cupomEl) {
+        cupomEl.textContent = CUPOMDOMES;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', setCupomNoDom);
 
 function redirectComCupom(url){
     const fullURL = url + '?couponCode=' + CUPOMDOMES;

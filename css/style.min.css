@@ -1,14 +1,266 @@
+﻿:root {
+  --bg: #0b0f14;
+  --bg-2: #0f1722;
+  --panel: rgba(18, 24, 34, 0.78);
+  --panel-strong: #121826;
+  --text: #e7ecf2;
+  --muted: #a9b4c3;
+  --accent: #4fd1c5;
+  --accent-2: #f6c343;
+  --accent-3: #8b5cf6;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 20px 60px rgba(3, 7, 18, 0.45);
+  --radius: 20px;
+  --radius-sm: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background: #000000;
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(79, 209, 197, 0.15), transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, rgba(139, 92, 246, 0.12), transparent 60%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+  color: var(--text);
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  letter-spacing: 0.2px;
 }
 
-.card {
-    background: #000000;
-    color: #ffffff;
-    border: 1px solid gray;
-    border-radius: 10px;
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
 }
 
-header{
-    background: purple;
+main, header, footer {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(10, 14, 20, 0.65) !important;
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar .navbar-brand strong {
+  font-family: "Fraunces", "Georgia", serif;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: var(--text) !important;
+}
+
+.navbar .nav-link,
+.navbar .nav-link i {
+  color: var(--text) !important;
+}
+
+.navbar .nav-link.border {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.hero {
+  margin-top: 80px;
+  padding: 60px 0 40px;
+}
+
+.hero-card {
+  border-radius: var(--radius);
+  background: linear-gradient(145deg, rgba(18, 24, 34, 0.9), rgba(10, 12, 20, 0.95));
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.hero-title {
+  font-family: "Fraunces", "Georgia", serif;
+  font-size: clamp(2.2rem, 3vw + 1rem, 3.8rem);
+  line-height: 1.05;
+}
+
+.hero-subtitle {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.badge-glow {
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(79, 209, 197, 0.12);
+  border: 1px solid rgba(79, 209, 197, 0.25);
+  color: var(--text);
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(79, 209, 197, 0.12);
+}
+
+.badge-glow span {
+  color: var(--accent);
+}
+
+.section-title {
+  font-family: "Fraunces", "Georgia", serif;
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.6rem);
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  color: var(--muted);
+  max-width: 720px;
+  margin: 0 auto 30px;
+}
+
+.info-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: 30px;
+}
+
+.info-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 20px 22px;
+  box-shadow: var(--shadow);
+}
+
+.info-card h5 {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.info-card p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.info-card {
+  text-align: left;
+}
+
+.info-card h5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#cupons-section .card,
+.course-card {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+#cupons-section .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+#cupons-section .card-body {
+  padding: 24px;
+}
+
+#cupons-section .card:hover,
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 80px rgba(6, 10, 20, 0.55);
+}
+
+#cupons-section .card .card-title,
+.course-card .card-title {
+  font-family: "Fraunces", "Georgia", serif;
+  font-size: 1.35rem;
+}
+
+#cupons-section .card .card-text,
+.course-card .card-text {
+  color: var(--muted);
+}
+
+.course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.course-pill {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: rgba(246, 195, 67, 0.18);
+  border: 1px solid rgba(246, 195, 67, 0.3);
+  color: var(--accent-2);
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(120deg, var(--accent), #2dd4bf);
+  border: none;
+  color: #071018;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 10px 22px;
+  box-shadow: 0 12px 30px rgba(79, 209, 197, 0.22);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(120deg, #5eead4, var(--accent));
+  color: #041018;
+}
+
+.btn[onclick="return false;"] {
+  background: transparent;
+  color: var(--muted) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.btn-outline-white {
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: var(--text) !important;
+}
+
+.footer-modern {
+  background: rgba(9, 12, 18, 0.92);
+  border-top: 1px solid var(--border);
+}
+
+.footer-modern .footer-title {
+  font-family: "Fraunces", "Georgia", serif;
+  font-size: 1.4rem;
+}
+
+.text-blue {
+  color: var(--accent) !important;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 40px;
+  }
+
+  .hero-badges {
+    justify-content: center;
+  }
 }

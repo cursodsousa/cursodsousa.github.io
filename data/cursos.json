@@ -1,0 +1,106 @@
+[
+  {
+    "id": "angular-19",
+    "title": "Angular 19 - Curso Completo do Iniciante ao Avancado (2025)",
+    "description": "Desenvolva aplicacoes Web modernas completas utilizando Angular com TailwindCSS, Material Design e APIs Rest.",
+    "image": "./img/capas/angular.png",
+    "url": "https://www.udemy.com/course/angular-curso-completo-do-iniciante-ao-avancado",
+    "available": true
+  },
+  {
+    "id": "spring-expert",
+    "title": "Spring Boot Expert: JPA, REST, JWT, OAuth2 com Docker e AWS",
+    "description": "Do Zero ao Expert em Spring Boot e todo o ecossistema Spring. Guia completo e atualizado.",
+    "image": "./img/capas/expert.png",
+    "url": "https://www.udemy.com/course/spring-boot-expert",
+    "available": true
+  },
+  {
+    "id": "java-completo",
+    "title": "Curso Java Completo e Atualizado do Iniciante ao Avancado",
+    "description": "Aprenda a base para se tornar um programador Java, atraves de conceitos de Programacao Orientada a Objetos, SQL e mais.",
+    "image": "./img/capas/curso-java-completo.png",
+    "url": "https://www.udemy.com/course/curso-java-completo-e-atualizado-do-iniciante-ao-avancado",
+    "available": true
+  },
+  {
+    "id": "fs-spring-react-2024",
+    "title": "Fullstack Spring Boot + ReactJS do Zero ao Deploy no Docker",
+    "description": "Desenvolva um sistema web completo do zero, utilizando Spring Boot 3 com React JS, Docker, PostgreSQL e muito mais.",
+    "image": "./img/capas/fullstack-spring-react-2024.png",
+    "url": "https://www.udemy.com/course/fullstack-spring-boot-reactjs-do-zero-ao-deploy-no-docker",
+    "available": true
+  },
+  {
+    "id": "spring-microservices",
+    "title": "Domine Microservicos e Mensageria com Spring Cloud e Docker",
+    "description": "Aprenda a construir uma arquitetura completa com Microservices, Servicos de Mensageria, RabbitMQ, Keycloak e muito mais.",
+    "image": "./img/capas/spring-microservices.jpg",
+    "url": "https://www.udemy.com/course/domine-microservicos-e-mensageria-com-spring-cloud-e-docker",
+    "available": true
+  },
+  {
+    "id": "docker",
+    "title": "Guia Docker para Desenvolvedores",
+    "description": "Guia para Desenvolvedores que querem rampar nos conhecimentos em Docker e montar seus ambientes de desenvolvimento.",
+    "image": "./img/capas/docker.jpg",
+    "url": "https://www.udemy.com/course/construa-ambientes-de-desenvolvimento-com-docker",
+    "available": true
+  },
+  {
+    "id": "quarkus-rest",
+    "title": "Aprenda Quarkus e Desenvolva API's RESTful Poderosas em Java",
+    "description": "Aprenda de vez o framework Java Subatomico Quarkus para criar API's RESTful poderosas e robustas.",
+    "image": "./img/capas/quarkus-rest.png",
+    "url": "https://www.udemy.com/course/aprenda-quarkus-e-desenvolva-apis-restful-poderosas-em-java",
+    "available": true
+  },
+  {
+    "id": "fs-next-spring",
+    "title": "Fullstack Next.js + Spring Boot, React, TS e Jasper Reports",
+    "description": "Desenvolva um sistema de vendas completo do zero ate a nuvem atraves da integracao dessa stack.",
+    "image": "./img/capas/spring-nextjs-fullstack.png",
+    "url": "https://www.udemy.com/course/fullstack-nextjs-spring-boot-react-ts-e-jasper-reports",
+    "available": true
+  },
+  {
+    "id": "angular-spring",
+    "title": "Angular e Spring Boot Fullstack completo e atualizado",
+    "description": "Desenvolva 2 aplicacoes completas atraves da integracao da stack Angular e Spring Boot.",
+    "image": "./img/capas/angular_spring_boot.jpg",
+    "url": "https://www.udemy.com/course/full-stack-angular9-spring-boot",
+    "available": true
+  },
+  {
+    "id": "spring-react",
+    "title": "Spring Boot + React JS: Desenvolva Aplicacoes Web Completas",
+    "description": "Curso Full Stack com Spring Boot e React JS, do zero a nuvem.",
+    "image": "./img/capas/spring_react.jpg",
+    "url": "https://www.udemy.com/course/desenvolva-aplicacoes-completas-com-spring-boot-e-react-js",
+    "available": true
+  },
+  {
+    "id": "design-apis",
+    "title": "Design de API's RestFul com Spring Boot, TDD e o novo JUnit5",
+    "description": "API's RestFul de alto nivel com Spring Boot utilizando TDD e o novo JUnit 5.",
+    "image": "./img/capas/design-api.jpg",
+    "url": "https://www.udemy.com/course/design-de-apis-restful-com-tdd-spring-boot-e-junit-5",
+    "available": true
+  },
+  {
+    "id": "angular-spring-heroku",
+    "title": "Angular 10 + Spring Boot com deploy no Heroku e Github pages",
+    "description": "Aprenda a integrar o framework front end Angular 10 com uma API REST em Java utilizando Spring Boot do absoluto zero.",
+    "image": "./img/capas/angular spring github heroku.png",
+    "url": "https://www.udemy.com/course/angular-10-spring-boot-com-deploy-no-heroku-e-github-pages",
+    "available": false
+  },
+  {
+    "id": "react-redux",
+    "title": "React + Redux, Bootstrap, Material UI e API's Rest Completo",
+    "description": "Domine o React + Redux com Bootstrap e Material Design com API's Rest.",
+    "image": "./img/capas/react.png",
+    "url": "https://www.udemy.com/course/domine-react-com-redux-2020-bootstrap-material-ui-e-apis-rest",
+    "available": false
+  }
+]

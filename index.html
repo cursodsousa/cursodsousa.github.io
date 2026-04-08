@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -7,11 +7,19 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Cursos de tecnologia com cupons mensais. Formação prática em Java, Spring, Angular, React e muito mais."
+    />
     <title>Cursos Dougllas Sousa</title>
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
     />
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -33,7 +41,7 @@
         <div class="container">
           <!-- Brand -->
           <a class="navbar-brand waves-effect" href="#">
-            <strong class="text-blue">DevBase - A Base dos Devs</strong>
+            <strong class="text-blue">DevBase</strong>
           </a>
 
           <!-- Collapse -->
@@ -52,7 +60,16 @@
           <!-- Links -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left -->
-            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link waves-effect" href="consultoria.html"
+                  >Consultoria</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-effect" href="sobre.html">Sobre mim</a>
+              </li>
+            </ul>
 
             <!-- Right -->
             <ul class="navbar-nav nav-flex-icons">
@@ -94,597 +111,81 @@
     <!--Main layout-->
     <main class="mt-5 pt-5">
       <div class="container">
-        <!--Section: Jumbotron-->
-        <section class="card primary-color-dark wow fadeIn" id="intro">
-          <!-- Content -->
-          <div class="card-body text-white text-center py-5 px-5 my-5">
-            <h1 class="mb-4">
-              <strong>Torne-se um desenvolvedor Fullstack</strong>
-            </h1>
-            <p>
-              <strong>Vários cupons de desconto</strong>
-            </p>
-            <p class="mb-4">
-              <strong
-                >Neste site você poderá ver o catálogo de cursos e obter cupons
-                de desconto</strong
-              >
-            </p>
-            <a href="#cupons-section" class="btn btn-outline-white btn-lg">
-              Ir para os cursos
-              <i class="fas fa-graduation-cap ml-2"></i>
-            </a>
+        <!--Section: Hero-->
+        <section class="hero" id="intro">
+          <div class="card hero-card wow fadeIn">
+            <div class="card-body text-center py-5 px-5 my-4">
+              <p class="text-uppercase small mb-2">
+                Formação prática para especialistas
+              </p>
+              <h1 class="hero-title mb-3">
+                Torne-se um especialista Fullstack com projetos reais
+              </h1>
+              <p class="hero-subtitle mb-4">
+                Aqui você encontra o catálogo completo de cursos e os cupons de desconto
+                atualizados por mês.
+              </p>
+              <div class="hero-badges">
+                <div class="badge-glow">
+                  Cupom do mês: <span id="cupom-do-mes">DESCONTO</span>
+                </div>
+                <div class="badge-glow">Acesso imediato</div>
+                <div class="badge-glow">Cursos a partir de R$ 29,90</div>
+              </div>
+              <div class="mt-4">
+                <a href="#cupons-section" class="btn btn-primary btn-lg">
+                  Ver cursos
+                  <i class="fas fa-graduation-cap ml-2"></i>
+                </a>
+                <a href="consultoria.html" class="btn btn-outline-white btn-lg ml-2">
+                  Aula particular
+                  <i class="fas fa-calendar-check ml-2"></i>
+                </a>
+                <a href="#como-funciona" class="btn btn-outline-white btn-lg ml-2">
+                  Como funciona
+                </a>
+              </div>
+            </div>
           </div>
-          <!-- Content -->
         </section>
-        <!--Section: Jumbotron-->
+        <!--Section: Hero-->
+
+        <section class="text-center my-5" id="como-funciona">
+          <h2 class="section-title">Como funciona</h2>
+          <p class="section-subtitle">
+            Escolha o curso ideal para o seu momento, aplique o cupom do mês e
+            tenha acesso imediato à formação.
+          </p>
+          <div class="info-grid">
+            <div class="info-card">
+              <h5>1. Escolha o curso</h5>
+              <p>Catálogo completo com trilhas em Java, Spring, Angular e React.</p>
+            </div>
+            <div class="info-card">
+              <h5>2. Use o cupom</h5>
+              <p>O cupom mensal já é aplicado automaticamente nos links.</p>
+            </div>
+            <div class="info-card">
+              <h5>3. Aprenda no seu ritmo</h5>
+              <p>Acesso vitalício e conteúdo sempre atualizado.</p>
+            </div>
+          </div>
+        </section>
 
         <hr class="my-4" />
 
         <div class="text-center text-white mb-5 font-large">
-          <h1><strong>Conheça nossas formações</strong></h1>
+          <h1 class="section-title"><strong>Conheça nossas formações</strong></h1>
+          <p class="section-subtitle">
+            Cursos focados em carreira, com projetos reais e stacks atuais.
+          </p>
         </div>
 
         <!--Section: Cards-->
         <section class="text-center">
           <!--Grid row-->
-          <div class="row mb-4 wow fadeIn" id="cupons-section">
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4" id="expert">
-              <!--Card-->
-              <div class="card">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="./img/capas/angular.png"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <a
-                    href="#"
-                    onclick="redirectANGULAR();"
-                  >
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!--Card content-->
-                <div class="card-body">
-                  <!--Title-->
-                  <h4 class="card-title">
-                    Angular 19 - Curso Completo do Iniciante ao Avançado (2025)
-                  </h4>
-                  <!--Text-->
-                  <p class="card-text">
-                    Desenvolva aplicações Web modernas completas utilizando Angular com TailwindCSS, Material Desing e API's Rest
-                  </p>
-                  <a
-                    href="#"
-                    onclick="redirectANGULAR();"
-                    class="btn btn-primary btn-md"
-                    >Obter com Desconto
-                    <i class="fas fa-shopping-cart ml-2"></i>
-                  </a>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4" id="expert">
-              <!--Card-->
-              <div class="card">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="./img/capas/expert.png"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <a
-                    href="#"
-                    onclick="redirectSPRING();"
-                  >
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!--Card content-->
-                <div class="card-body">
-                  <!--Title-->
-                  <h4 class="card-title">
-                    Spring Boot Expert: JPA, REST, JWT, OAuth2 com Docker e AWS
-                  </h4>
-                  <!--Text-->
-                  <p class="card-text">
-                    Do Zero ao Expert em Spring Boot e todo o ecossistema
-                    Spring. Guia Completo e atualizado.
-                  </p>
-                  <a
-                    href="#"
-                    onclick="redirectSPRING();"
-                    class="btn btn-primary btn-md"
-                    >Obter com Desconto
-                    <i class="fas fa-shopping-cart ml-2"></i>
-                  </a>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-
-            <div class="col-md-6 mb-4" id="curso-java">
-              <!--Card-->
-              <div class="card">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="./img/capas/curso-java-completo.png"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <a
-                    href="#"
-                    onclick="redirectJAVA();"
-                  >
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!--Card content-->
-                <div class="card-body">
-                  <!--Title-->
-                  <h4 class="card-title">
-                    Curso Java Completo e Atualizado do Iniciante ao Avançado
-                  </h4>
-                  <!--Text-->
-                  <p class="card-text">
-                    Aprenda a base para se tornar um programador Java, através de conceitos de Programação Orientada a Objetos, SQL e mais!
-                  </p>
-                  <a
-                    href="#"
-                    onclick="redirectJAVA()"
-                    class="btn btn-primary btn-md"
-                    >Obter com Desconto
-                    <i class="fas fa-shopping-cart ml-2"></i>
-                  </a>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-
-
-
-
-
-            <div class="col-md-6 mb-4" id="fullstack-spring-react-2024">
-              <!--Card-->
-              <div class="card">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="./img/capas/fullstack-spring-react-2024.png"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <a
-                    href="#"
-                    onclick="redirectFSREACT2024();"
-                  >
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!--Card content-->
-                <div class="card-body">
-                  <!--Title-->
-                  <h4 class="card-title">
-                    Fullstack Spring Boot + ReactJS do Zero ao Deploy no Docker
-                  </h4>
-                  <!--Text-->
-                  <p class="card-text">
-                    Desenvolva um sistema web completo do zero, utilizando Spring Boot 3 com React JS, Docker, PostgreSQL e muito mais!
-                  </p>
-                  <a
-                    href="#"
-                    onclick="redirectFSREACT2024()"
-                    class="btn btn-primary btn-md"
-                    >Obter com Desconto
-                    <i class="fas fa-shopping-cart ml-2"></i>
-                  </a>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-
-
-
-
-            <div class="col-md-6 mb-4" id="spring-microservices">
-              <!--Card-->
-              <div class="card">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="./img/capas/spring-microservices.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <a
-                    href="#"
-                    onclick="redirectSPRINGMS();"
-                  >
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!--Card content-->
-                <div class="card-body">
-                  <!--Title-->
-                  <h4 class="card-title">
-                    Domine Microservicos e Mensageria com Spring Cloud e Docker
-                  </h4>
-                  <!--Text-->
-                  <p class="card-text">
-                    Aprenda a construir um arquitetura completa com Microservices, Serviços de Mensageria, RabbitMQ, Keycloak e muito mais
-                  </p>
-                  <a
-                    href="#"
-                    onclick="redirectSPRINGMS()"
-                    class="btn btn-primary btn-md"
-                    >Obter com Desconto
-                    <i class="fas fa-shopping-cart ml-2"></i>
-                  </a>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-
-
-            <div class="col-md-6 mb-4" id="curso-docker">
-              <!--Card-->
-              <div class="card">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="./img/capas/docker.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <a
-                    href="#"
-                    onclick="redirectDOCKER();"
-                  >
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!--Card content-->
-                <div class="card-body">
-                  <!--Title-->
-                  <h4 class="card-title">
-                    Guia Docker para Desenvolvedores
-                  </h4>
-                  <!--Text-->
-                  <p class="card-text">
-                    Guia para Desenvolvedores que querem rampar nos conhecimentos em Docker e montar seus ambientes de desenvolvimento.
-                  </p>
-                  <a
-                    href="#"
-                    onclick="redirectDOCKER()"
-                    class="btn btn-primary btn-md"
-                    >Obter com Desconto
-                    <i class="fas fa-shopping-cart ml-2"></i>
-                  </a>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-
-
-
-
-              <!-- curso quarkus rest api -->
-              <div class="col-md-6 mb-4" id="quarkus-rest">
-                <!--Card-->
-                <div class="card">
-                  <!--Card image-->
-                  <div class="view overlay">
-                    <img
-                      src="./img/capas/quarkus-rest.png"
-                      class="card-img-top"
-                      alt=""
-                    />
-                    <a
-                      href="#"
-                      onclick="redirectQUARKUS();"
-                    >
-                      <div class="mask rgba-white-slight"></div>
-                    </a>
-                  </div>
-  
-                  <!--Card content-->
-                  <div class="card-body">
-                    <!--Title-->
-                    <h4 class="card-title">
-                      Aprenda Quarkus e Desenvolva API's RESTful Poderosas em Java 
-                    </h4>
-                    <!--Text-->
-                    <p class="card-text">
-                      Aprenda de vez o framework Java Subatômico Quarkus para criar API's RESTful poderosas e robustas.
-                    </p>
-                    <a
-                      href="#"
-                      onclick="redirectQUARKUS();"
-                      class="btn btn-primary btn-md"
-                      >Obter com Desconto
-                      <i class="fas fa-shopping-cart ml-2"></i>
-                    </a>
-                  </div>
-                </div>
-                <!--/.Card-->
-              </div>
-
-
-              <!--Fullstack Next.js + Spring Boot-->
-            <!--Grid column-->
-            <div class="col-md-6 mb-4" id="angular_spring_boot">
-              <!--Card-->
-              <div class="card">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="./img/capas/spring-nextjs-fullstack.png"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <a
-                    href="#"
-                    onclick="redirectFSNEXT();"
-                  >
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!--Card content-->
-                <div class="card-body">
-                  <!--Title-->
-                  <h4 class="card-title">
-                    Fullstack Next.js + Spring Boot, React, TS e Jasper Reports
-                  </h4>
-                  <!--Text-->
-                  <p class="card-text">
-                    Desenvolva um sistema de vendas completa do zero até a nuvem através da integração da
-                    dessa stack.
-                  </p>
-                  <a
-                    href="#"
-                    onclick="redirectFSNEXT();"
-                    class="btn btn-primary btn-md"
-                    >Obter com Desconto
-                    <i class="fas fa-shopping-cart ml-2"></i>
-                  </a>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-            <div class="col-md-6 mb-4" id="angular_spring_boot">
-              <!--Card-->
-              <div class="card">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="./img/capas/angular_spring_boot.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <a
-                    onclick="redirectFSANG();"
-                    href="#"
-                  >
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!--Card content-->
-                <div class="card-body">
-                  <!--Title-->
-                  <h4 class="card-title">
-                    Angular e Spring Boot Fullstack completo e atualizado
-                  </h4>
-                  <!--Text-->
-                  <p class="card-text">
-                    Desenvolva 2 aplicações completas através da integração da
-                    stack Angular e Spring Boot.
-                  </p>
-                  <a
-                    onclick="redirectFSANG();"
-                    href="#"
-                    class="btn btn-primary btn-md"
-                    >Obter com Desconto
-                    <i class="fas fa-shopping-cart ml-2"></i>
-                  </a>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-            <!--Grid column-->
-
-          
-           
-            <!-- Spring boot + React JS -->
-            <!--Grid column-->
-            <div class="col-md-6 mb-4" id="spring-react">
-              <!--Card-->
-              <div class="card">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="./img/capas/spring_react.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <a
-                    onclick="redirectFSREACT()"
-                    href="#"
-                  >
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!--Card content-->
-                <div class="card-body">
-                  <!--Title-->
-                  <h4 class="card-title">
-                    Spring Boot + React JS: Desenvolva Aplicações Web Completas
-                  </h4>
-                  <!--Text-->
-                  <p class="card-text">
-                    Curso Full Stack com Spring Boot e React JS, do zero à
-                    nuvem.
-                  </p>
-                  <br />
-                  <a
-                    onclick="redirectFSREACT()"
-                    href="#"
-                    class="btn btn-primary btn-md"
-                    >Obter com Desconto
-                    <i class="fas fa-shopping-cart ml-2"></i>
-                  </a>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4" id="design-api">
-              <!--Card-->
-              <div class="card">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="./img/capas/design-api.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <a
-                    onclick="redirectDESIGN();"
-                    href="#"
-                  >
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!--Card content-->
-                <div class="card-body">
-                  <!--Title-->
-                  <h4 class="card-title">
-                    Design de API's RestFul com Spring Boot, TDD e o novo JUnit5
-                  </h4>
-                  <!--Text-->
-                  <p class="card-text">
-                    API's RestFul de alto nível com Spring Boot utilizando TDD e
-                    o novo JUnit 5.
-                  </p>
-                  <br />
-                  <a
-                    onclick="redirectDESIGN();"
-                    href="#"
-                    class="btn btn-primary btn-md"
-                    >Obter com Desconto
-                    <i class="fas fa-shopping-cart ml-2"></i>
-                  </a>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4" id="angular_spring_boot_heroku">
-              <!--Card-->
-              <div class="card">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="./img/capas/angular spring github heroku.png"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <a
-                    href="#"
-                    onclick="return false;"
-                  >
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!--Card content-->
-                <div class="card-body">
-                  <!--Title-->
-                  <h4 class="card-title">
-                    Angular 10 + Spring Boot com deploy no Heroku e Github pages
-                  </h4>
-                  <!--Text-->
-                  <p class="card-text">
-                    Aprenda a integrar o framework front end Angular 10 com uma
-                    API REST em Java utilizando Spring Boot do absoluto zero.
-                  </p>
-                  <a
-                    href="#"
-                    onclick="return false;"
-                    class="btn btn-primary btn-md"
-                    >Indisponível
-                    <i class="fas fa-shopping-cart ml-2"></i>
-                  </a>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4" id="react">
-              <!--Card-->
-              <div class="card">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="./img/capas/react.png"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <a
-                    href="#"
-                    onclick="return false;"
-                  >
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!--Card content-->
-                <div class="card-body">
-                  <!--Title-->
-                  <h4 class="card-title">
-                    React + Redux, Bootstrap, Material UI e API's Rest Completo
-                  </h4>
-                  <!--Text-->
-                  <p class="card-text">
-                    Domine o React + Redux com Bootstrap e Material Design COM
-                    API's Rest.
-                  </p>
-                  <a
-                    href="#"
-                    onclick="return false;"
-                    class="btn btn-primary btn-md"
-                    >Indisponível
-                    <i class="fas fa-shopping-cart ml-2"></i>
-                  </a>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-
-           
-          </div>
+          <p id="cursos-loading" class="section-subtitle">Carregando cursos...</p>
+          <div class="row mb-4 wow fadeIn" id="cupons-section"></div>
           <!--Grid row-->
         </section>
         <!--Section: Cards-->
@@ -694,7 +195,7 @@
 
     <!--Footer-->
     <footer
-      class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn"
+      class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn footer-modern"
     >
       <!--Call to action-->
       <div class="pt-4">
@@ -703,7 +204,7 @@
           href="https://www.udemy.com/user/dougllas-sousa/"
           target="_blank"
           role="button"
-          >Minha Página na Udemy
+          >Minha página na Udemy
           <i class="fas fa-graduation-cap ml-2"></i>
         </a>
         <a class="btn btn-outline-white" href="#cupons-section" role="button"
@@ -759,16 +260,14 @@
 
       <!--Copyright-->
       <div class="footer-copyright py-3">
-        © 2019 Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank">
-          MDBootstrap.com
-        </a>
+        © 2026 Dougllas Sousa. Todos os direitos reservados.
       </div>
       <!--/.Copyright-->
     </footer>
     <!--/.Footer-->
 
     <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/courses.js"></script>
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap tooltips -->
