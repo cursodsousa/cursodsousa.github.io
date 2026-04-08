@@ -1,5 +1,13 @@
 [
   {
+    "id": "spring-kafka",
+    "title": "Spring Boot + Kafka: Arquitetura Completa de Microservices",
+    "description": "Aprenda Microservices com Spring Boot, Apache Kafka, Docker, Webhooks, MinIO e Jasper Reports na prática.",
+    "image": "./img/capas/spring-kafka.png",
+    "url": "https://www.udemy.com/course/spring-boot-kafka/",
+    "available": true
+  },
+  {
     "id": "angular-19",
     "title": "Angular 19 - Curso Completo do Iniciante ao Avancado (2025)",
     "description": "Desenvolva aplicacoes Web modernas completas utilizando Angular com TailwindCSS, Material Design e APIs Rest.",
